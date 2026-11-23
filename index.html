@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETF 投資全解析：從入門機制到專業數據評估</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #3b82f6;
+            --accent: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --bg: #f1f5f9;
+            --card: #ffffff;
+            --text: #1e293b;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+        header h1 { margin: 0 0 10px 0; font-size: 2.2rem; }
+        header p { margin: 0; opacity: 0.9; font-size: 1.1rem; }
+        .container {
+            max-width: 960px;
+            margin: -30px auto 50px auto;
+            padding: 0 20px;
+        }
+        .slide {
+            background: var(--card);
+            border-radius: 16px;
+            padding: 35px 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05);
+            border-top: 6px solid var(--secondary);
+        }
+        .source-badge {
+            display: inline-block;
+            background: #dbeafe;
+            color: var(--primary);
+            font-size: 0.85rem;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 999px;
+            margin-bottom: 12px;
+        }
+        h2 {
+            color: var(--primary);
+            margin-top: 0;
+            font-size: 1.6rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 10px;
+        }
+        h3 { color: var(--secondary); margin-top: 20px; font-size: 1.2rem; }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 15px;
+        }
+        .box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .box-highlight {
+            background: #ecfdf5;
+            border-left: 5px solid var(--accent);
+            padding: 18px 22px;
+            border-radius: 6px;
+            margin: 18px 0;
+        }
+        .box-warn {
+            background: #fef2f2;
+            border-left: 5px solid var(--danger);
+            padding: 18px 22px;
+            border-radius: 6px;
+            margin: 18px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.95rem;
+        }
+        th, td {
+            border: 1px solid #cbd5e1;
+            padding: 12px 15px;
+            text-align: left;
+        }
+        th { background-color: var(--primary); color: white; }
+        tr:nth-child(even) { background-color: #f8fafc; }
+        .movie-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.85rem;
+            color: white;
+        }
+        .g-tag { background: #10b981; }
+        .p-tag { background: #3b82f6; }
+        .pg-tag { background: #f59e0b; }
+        .r-tag { background: #ef4444; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>📊 ETF 投資全解析：從入門機制到專業數據評估</h1>
+    <p>基於 LLM Wiki 五大核心知識庫文獻自動化萃取生成</p>
+</header>
+
+<div class="container">
+
+    <!-- Slide 1: 來自 TextFile1.txt -->
+    <div class="slide">
+        <span class="source-badge">知識來源：TextFile1.txt（法規架構與交易機制）</span>
+        <h2>Slide 1：什麼是 ETF？雙重市場與三大法規分類</h2>
+        <p><strong>ETF（Exchange Traded Fund）</strong>是由投信公司發行、在證券交易所上市的開放式基金，同時具備<strong>「基金的分散風險」</strong>與<strong>「股票的盤中即時買賣」</strong>雙重特性。</p>
+        <div class="grid-2">
+            <div class="box">
+                <h3>🔄 雙重交易市場</h3>
+                <ul>
+                    <li><strong>初級市場</strong>：法人或參與證券商透過「實物申購/買回」或「現金申購/買回」創造或銷毀受益憑證。</li>
+                    <li><strong>次級市場</strong>：一般投資人在盤中透過證券商直接依市價下單買賣。</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>🏛️ 台灣三大法規架構</h3>
+                <ul>
+                    <li><strong>證信託 ETF</strong>：國內投信發行，分為「被動式（追蹤指數）」與「主動式（經理人主動決策）」。</li>
+                    <li><strong>期信託 ETF</strong>：追蹤原油、貴金屬、黃豆等期貨指數。</li>
+                    <li><strong>境外 ETF</strong>：國外基金機構直接跨境來台上市交易。</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2: 來自 TextFile2.txt -->
+    <div class="slide">
+        <span class="source-badge">知識來源：TextFile2.txt（商品屬性與風險分級）</span>
+        <h2>Slide 2：ETF 也有「電影分級」？看懂風險屬性再進場</h2>
+        <p>市面上 ETF 橫跨多種資產類別，風險屬性截然不同，切忌用同一種心態操作：</p>
+        <table>
+            <tr>
+                <th>電影分級比喻</th>
+                <th>對應 ETF 類型</th>
+                <th>交易特性與持有建議</th>
+            </tr>
+            <tr>
+                <td><span class="movie-tag g-tag">普遍級</span></td>
+                <td><strong>國內成分股原型 ETF</strong></td>
+                <td>風險最單純，適合單筆或定期定額中長期持有作為核心部位。</td>
+            </tr>
+            <tr>
+                <td><span class="movie-tag p-tag">保護級</span></td>
+                <td><strong>海外股票 / 債券 ETF</strong></td>
+                <td>無漲跌幅限制，需留意<strong>匯率波動</strong>與跨國交易時間差。</td>
+            </tr>
+            <tr>
+                <td><span class="movie-tag pg-tag">輔導級</span></td>
+                <td><strong>期貨 ETF（代號末碼 U）</strong></td>
+                <td>須簽風險預告書，留意<strong>期貨正價差轉倉成本</strong>，不適合長期持有。</td>
+            </tr>
+            <tr>
+                <td><span class="movie-tag r-tag">限制級</span></td>
+                <td><strong>槓桿 / 反向 ETF（末碼 L / R）</strong></td>
+                <td>須符合適格性條件；因每日動態再平衡複利偏離，<strong>僅限短期交易</strong>。</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Slide 3: 來自 TextFile3.txt -->
+    <div class="slide">
+        <span class="source-badge">知識來源：TextFile3.txt（淨值、折溢價與挑選原則）</span>
+        <h2>Slide 3：買貴了嗎？看懂「淨值」與「折溢價」</h2>
+        <div class="box-highlight">
+            💡 <strong>ETF 淨值（NAV）</strong> ＝ 基金持有的所有股票總市值 ÷ 發行總股數（代表這檔 ETF 的真實價值）。
+        </div>
+        <div class="grid-2">
+            <div class="box">
+                <h3>📈 溢價（市價 &gt; 淨值）</h3>
+                <p>市場過度追捧導致成交價高於真實價值。<strong>建議溢價超過 0.5%～1% 時切勿盲目追高</strong>，以免套利賣壓出籠時蒙受無謂虧損。</p>
+            </div>
+            <div class="box">
+                <h3>📉 折價（市價 &lt; 淨值）</h3>
+                <p>成交價低於真實價值，但若長期大幅折價，需留意是否流動性極差或市場出現恐慌性拋售。</p>
+            </div>
+        </div>
+        <p><strong>新手防雷三指標</strong>：1. 挑選基金規模較大（遠離股票型 1 億元下市清算門檻） 2. 依風險承受度選股或債 3. 避開大幅溢價時段進場。</p>
+    </div>
+
+    <!-- Slide 4: 來自 TextFile4.txt -->
+    <div class="slide">
+        <span class="source-badge">知識來源：TextFile4.txt（總經政策與股債資產配置）</span>
+        <h2>Slide 4：如何打造長期穩健的股債配置？</h2>
+        <p>影響金融市場報酬的兩大關鍵引擎是<strong>「企業獲利成長」</strong>與<strong>「美國聯準會（Fed）利率政策」</strong>（例如 2020 年 QE 推升股債齊漲，2022 年暴力升息導致股債雙跌）。</p>
+        <div class="box-highlight">
+            <strong>🎯 經典核心＋衛星配置原則：</strong>
+            <ul>
+                <li><strong>核心資產（成長引擎）</strong>：以追蹤美股（S&amp;P 500）或台股加權指數的市值型 ETF 為主，享受長期經濟成長。</li>
+                <li><strong>防禦部位（降低波動）</strong>：搭配「美國公債」及「投資等級債券 ETF」，利用股債低相關性平抑市場震盪。</li>
+                <li><strong>定期再平衡（Rebalance）</strong>：固定週期將股債比例調回原始設定，達成自動「高賣低買」紀律。</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Slide 5: 來自 TextFile5.txt -->
+    <div class="slide">
+        <span class="source-badge">知識來源：TextFile5.txt（五大維度量化評估體系）</span>
+        <h2>Slide 5：別只看殖利率！專業投資人的「四步驟體檢流程」</h2>
+        <p>高股息可能隱藏「賺股息、賠價差」的貼息陷阱，挑選 ETF 應依序通過四道數據關卡：</p>
+        <ol>
+            <li><strong>第一關：安全性過濾</strong> — 檢查基金規模、日均成交量（避免買賣價差過大），並確認折溢價在 ±0.5% 內。</li>
+            <li><strong>第二關：隱形成本體檢</strong> — 比較<strong>總費用率（TER，內扣費用）</strong>與<strong>追蹤誤差</strong>，費用越低、長期複利越強。</li>
+            <li><strong>第三關：風險壓力測試</strong> — 檢視<strong>最大回撤（MDD）</strong>與<strong>年化波動度</strong>，確認股災發生時的最壞跌幅自己抱得住。</li>
+            <li><strong>第四關：綜合 CP 值決選</strong> — 比較含息<strong>總報酬率（Total Return）</strong>，並挑選<strong>夏普值（Sharpe Ratio &gt; 1）</strong>或<strong>索提諾值</strong>領先的標的。</li>
+        </ol>
+        <div class="box-warn">
+            ⚠️ <strong>高股息 ETF 額外檢查點</strong>：留意配息來源中「收益平準金」佔比是否過高，以及每次除息後的「填息天數與填息率」。
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
